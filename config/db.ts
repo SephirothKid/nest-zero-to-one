@@ -2,7 +2,7 @@
  * @Author: Sephiroth·D·Kid
  * @Date: 2020-03-17 16:14:15
  * @LastEditors: Sephiroth·D·Kid
- * @LastEditTime: 2020-03-17 16:29:23
+ * @LastEditTime: 2020-03-17 16:39:24
  * @Description: 数据库配置文件
  */
 
@@ -19,7 +19,7 @@ const productConfig = {
 
 const localConfig = {
   mysql: {
-    port: '数据库端口',
+    port: 3306,
     host: '数据库地址',
     user: '用户名',
     password: '密码',

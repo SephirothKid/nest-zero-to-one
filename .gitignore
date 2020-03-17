@@ -3,7 +3,7 @@
 /node_modules
 
 # database config
-/config/db.ts
+/config
 
 # Logs
 logs
