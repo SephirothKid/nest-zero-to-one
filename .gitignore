@@ -2,6 +2,9 @@
 /dist
 /node_modules
 
+# database config
+/config/db.ts
+
 # Logs
 logs
 *.log
