@@ -1,3 +1,9 @@
+## 注意
+
+项目拉下来后，运行时会报错找不到 `config/db.ts`，这个文件需要自己创建，并配置好数据库信息。
+
+具体教程可以参考我的掘金博客：[《Nest.js 从零到壹系列（二）：数据库的连接》](https://juejin.im/post/5e71e108e51d4526ec0d56b9)
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
