@@ -2,7 +2,7 @@
  * @Author: Sephiroth·D·Kid
  * @Date: 2020-03-19 16:26:28
  * @LastEditors: Sephiroth·D·Kid
- * @LastEditTime: 2020-03-20 09:36:51
+ * @LastEditTime: 2020-03-20 11:47:29
  * @Description: JWT 策略
  */
 
@@ -23,7 +23,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 
   // JWT验证 - Step 4: 被守卫调用
   async validate(payload: any) {
-    console.log(`JWT验证 - Step 4: 被守卫调用`);
+    // console.log(`JWT验证 - Step 4: 被守卫调用`);
     return { userId: payload.sub, username: payload.username, realName: payload.realName, role: payload.role };
   }
 }

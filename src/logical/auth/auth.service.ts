@@ -12,7 +12,7 @@ export class AuthService {
 
   // JWT验证 - Step 2: 校验用户信息
   async validateUser(username: string, password: string): Promise<any> {
-    console.log('JWT验证 - Step 2: 校验用户信息');
+    // console.log('JWT验证 - Step 2: 校验用户信息');
     const user = await this.usersService.findOne(username);
     if (user) {
       const hashedPassword = user.password;
@@ -47,7 +47,7 @@ export class AuthService {
       realName: user.realName,
       role: user.role,
     };
-    console.log('JWT验证 - Step 3: 处理 jwt 签证', `payload: ${JSON.stringify(payload)}`);
+    // console.log('JWT验证 - Step 3: 处理 jwt 签证', `payload: ${JSON.stringify(payload)}`);
     try {
       const token = this.jwtService.sign(payload);
       return {
