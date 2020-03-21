@@ -20,8 +20,8 @@ export class HttpExceptionFilter implements ExceptionFilter {
     Logger.info(logFormat);
     response.status(status).json({
       statusCode: status,
-      error: exception.message.error,
-      msg: exception.message.message ? exception.message.message : `${status >= 500 ? 'Service Error' : 'Client Error'}`,
+      error: exception.message,
+      msg: `${status >= 500 ? 'Service Error' : 'Client Error'}`,
     });
   }
 }

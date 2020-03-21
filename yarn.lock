@@ -50,20 +50,20 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@nestjs/common@^6.0.0":
-  version "6.11.11"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.11.tgz#701da2462a15cc94d55ec863ddd9f2fb0bbd7136"
-  integrity sha512-K4wuK/V2M82AsoudtY0UYV+M1nYDSSb10t8AkMwFiP+AWMuxCJNtE8qLc9jUe2aTKMbhBiQUfsbZFmg/MRinPg==
+"@nestjs/common@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-7.0.3.tgz#89258b411b2f1a1704ba0289473f2ed8e32423db"
+  integrity sha512-ENfgocjBC8aWAvvjjCq/JFN94CIVX4FrXr12r66UEcw/GtCW/qAc/BVWGX//7MRtk95me82hBEQQx2kovL91bA==
   dependencies:
     axios "0.19.2"
     cli-color "2.0.0"
     tslib "1.11.1"
-    uuid "7.0.1"
+    uuid "7.0.2"
 
-"@nestjs/core@^6.0.0":
-  version "6.11.11"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.11.11.tgz#2b97a3e9c2a853f5693ed84daf81c1ee3b2782b4"
-  integrity sha512-ewUy2rjiRWi6SziI5gXZnlat7PfnVklL3tusnU1qqtUm74cPY1Zre+zDCJ27P/+B7sFJHbkFfpi0qQP2pQv9jQ==
+"@nestjs/core@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-7.0.3.tgz#4e2e653d640b9dff4d0574cb7147f12c1322bbd8"
+  integrity sha512-uIIcM+a2IoV2aqHHMtnDGOy81CMNNNm3xpJIFLjS74OqCGpE4skqiFIZRsB1cIeip1EtVh7IzU0xXo0JrIZEQA==
   dependencies:
     "@nuxtjs/opencollective" "0.2.2"
     fast-safe-stringify "2.0.7"
@@ -71,7 +71,7 @@
     object-hash "2.0.3"
     path-to-regexp "3.2.0"
     tslib "1.11.1"
-    uuid "7.0.1"
+    uuid "7.0.2"
 
 "@nestjs/jwt@^7.0.0":
   version "7.0.0"
@@ -174,9 +174,9 @@
   integrity sha512-FwI9gX75FgVBJ7ywgnq/P7tw+/o1GUbtP0KzbtusLigAOgIgNISRK0ZPl4qertvXSIE8YbsVJueQ90cDt9YYyw==
 
 "@types/node@*":
-  version "13.9.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.1.tgz#96f606f8cd67fb018847d9b61e93997dabdefc72"
-  integrity sha512-E6M6N0blf/jiZx8Q3nb0vNaswQeEyn0XlupO+xN6DtJ6r6IT4nXrTry7zhIfYvFCl3/8Cu6WIysmUBKiqV0bqQ==
+  version "13.9.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.2.tgz#ace1880c03594cc3e80206d96847157d8e7fa349"
+  integrity sha512-bnoqK579sAYrQbp73wwglccjJ4sfRdKU7WNEZ5FW4K2U6Kc0/eZ5kvXG0JKsEKFB50zrFmfFt52/cvBbZa7eXg==
 
 "@types/node@^10.12.18":
   version "10.17.17"
@@ -5244,10 +5244,10 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.1.tgz#95ed6ff3d8c881cbf85f0f05cc3915ef994818ef"
-  integrity sha512-yqjRXZzSJm9Dbl84H2VDHpM3zMjzSJQ+hn6C4zqd5ilW+7P4ZmLEEqwho9LjP+tGuZlF4xrHQXT0h9QZUS/pWA==
+uuid@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.2.tgz#7ff5c203467e91f5e0d85cfcbaaf7d2ebbca9be6"
+  integrity sha512-vy9V/+pKG+5ZTYKf+VcphF5Oc6EFiu3W8Nv3P3zIh0EqVI80ZxOzuPfe9EHjkFNvf8+xuTHVeei4Drydlx4zjw==
 
 uuid@^3.3.2, uuid@^3.3.3:
   version "3.4.0"
