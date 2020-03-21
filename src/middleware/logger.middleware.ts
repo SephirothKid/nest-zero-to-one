@@ -23,6 +23,7 @@ export class LoggerMiddleware implements NestMiddleware {
 export function logger(req: Request, res: Response, next: () => any) {
   const code = res.statusCode;
   next();
+  // console.log(req);
   // req.parmas
   const logFormat = ` >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     Request original url: ${req.originalUrl}
