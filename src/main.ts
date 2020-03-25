@@ -15,7 +15,7 @@ async function bootstrap() {
   // 使用拦截器打印出参
   app.useGlobalInterceptors(new TransformInterceptor());
   app.setGlobalPrefix('nest-zero-to-one');
-  // app.useGlobalFilters(new AllExceptionsFilter());
+  app.useGlobalFilters(new AllExceptionsFilter());
   app.useGlobalFilters(new HttpExceptionFilter());
   await app.listen(3000);
 }

@@ -2,7 +2,7 @@
  * @Author: Sephiroth·D·Kid
  * @Date: 2020-03-24 10:03:09
  * @LastEditors: Sephiroth·D·Kid
- * @LastEditTime: 2020-03-24 11:38:10
+ * @LastEditTime: 2020-03-25 14:20:06
  * @Description: DTO of user
  */
 
@@ -19,7 +19,7 @@ export class RegisterInfoDTO {
   @IsNotEmpty({ message: '重复密码不能为空' })
   readonly repassword: string;
   @IsNotEmpty({ message: '手机号不能为空' })
-  @IsNumber()
+  // @IsNumber()
   readonly mobile: number;
   readonly role?: string | number;
 }
