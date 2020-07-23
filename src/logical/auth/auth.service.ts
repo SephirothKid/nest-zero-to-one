@@ -6,10 +6,7 @@ import { RedisInstance } from '../../database/redis';
 
 @Injectable()
 export class AuthService {
-  constructor(
-    private readonly usersService: UserService,
-    private readonly jwtService: JwtService,
-  ) {}
+  constructor(private readonly usersService: UserService, private readonly jwtService: JwtService) {}
 
   // JWT验证 - Step 2: 校验用户信息
   async validateUser(username: string, password: string): Promise<any> {
@@ -51,8 +48,10 @@ export class AuthService {
     // console.log('JWT验证 - Step 3: 处理 jwt 签证', `payload: ${JSON.stringify(payload)}`);
     try {
       const token = this.jwtService.sign(payload);
-      const redis = await RedisInstance.initRedis('certificate', 0);
-      await redis.setex(`${user.id}-${user.username}`, 60, `${token}`);
+      // 实例化 redis
+      const redis = await RedisInstance.initRedis('auth.certificate', 0);
+      // 将用户信息和 token 存入 redis，并设置失效时间，语法：[key, seconds, value]
+      await redis.setex(`${user.id}-${user.username}`, 300, `${token}`);
       return {
         code: 200,
         data: {
