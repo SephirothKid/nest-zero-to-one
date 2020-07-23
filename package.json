@@ -28,6 +28,7 @@
     "@nestjs/swagger": "^4.5.1",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.1",
+    "ioredis": "^4.17.3",
     "log4js": "^6.1.2",
     "mysql2": "^2.1.0",
     "passport": "^0.4.1",
