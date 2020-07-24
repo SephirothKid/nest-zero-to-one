@@ -43,7 +43,7 @@ export class AuthService {
   async certificate(user: any) {
     const payload = {
       username: user.username,
-      sub: user.userId,
+      sub: user.id,
       realName: user.realName,
       role: user.role,
     };
